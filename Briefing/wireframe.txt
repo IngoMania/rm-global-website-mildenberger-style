@@ -1,0 +1,397 @@
+homepage-design-wireframe.txt
+# Homepage Design Wireframe – Local Lead Generation Template
+
+## Purpose of This Wireframe
+This wireframe translates the **detailed homepage briefing** into a **clear, visual-logic layout** that designers, developers, or AI design agents can follow **without interpretation**.
+
+This is **not a visual design** (no colors, fonts, or branding yet).
+It is a **structural and UX wireframe** describing:
+- Section order
+- Column logic
+- Content hierarchy
+- CTA placement
+- User flow
+
+The wireframe is optimized for:
+- Conversion
+- Local SEO
+- Scalability across industries
+
+---
+
+## Global Page Logic
+
+- One-column flow (vertical)
+- Clear visual separation between sections
+- CTA visible at regular intervals
+- Mobile-first mindset (everything stacks to one column ≤480px)
+
+---
+
+## 0. Sticky Header (Global – Always Visible)
+
+**Layout (Desktop):**
+```
+| LOGO | Home | About | Areas We Serve ▾ | Services ▾ |        CALL NOW |
+```
+
+**Key Rules:**
+- Sticky on scroll
+- Logo links to homepage
+- "Areas We Serve" and "Services" are dropdowns
+- "Call Now" is a high-contrast button
+- Optional small round icons next to CTA (WhatsApp / Social if needed)
+
+---
+
+## 1. Hero Section (Above the Fold)
+
+**Layout:** Two-column (Desktop) → One-column (Mobile)
+
+```
+| HEADLINE + CTA + BENEFITS |   HERO IMAGE   |
+```
+
+**Left Column:**
+- H1 headline (primary value proposition)
+- Short supporting sentence
+- Primary CTA button (e.g. "Book a Dumpster Now")
+
+**Below CTA (still left column):**
+- Horizontal benefit strip (3 items)
+```
+✔ Flexible Scheduling | ✔ Reliable Service | ✔ Competitive Rates
+```
+
+**Optional (below benefits):**
+- ⭐⭐⭐⭐⭐ Google rating
+- Small trust badges or text ("Top Rated on Google")
+
+**Right Column:**
+- Large, high-quality, relevant image
+
+---
+
+## 2. Primary SEO Intro Section (H1 Content Block)
+
+**Layout:** One column, centered or left-aligned
+
+```
+[ H1: Main Keyword / Service ]
+
+Short, conversational paragraph explaining:
+- What problem the visitor has
+- That they are in the right place
+
+[ CTA Button ]
+```
+
+**Notes:**
+- This is the **SEO anchor section**
+- Text written for humans, not bots
+
+---
+
+## 3. Benefits Section (Card-Based)
+
+**Layout:** 3-column grid
+
+```
+[ ICON ]  [ ICON ]  [ ICON ]
+Benefit   Benefit   Benefit
+Text      Text      Text
+```
+
+**Each Card:**
+- Icon or small image at top
+- Short benefit headline
+- 1–2 lines of explanation
+
+**Below Cards:**
+- Primary CTA button
+
+---
+
+## 4. Service Overview Section (Visual Service Cards)
+
+**Layout:** 3-column grid (expandable to 6 or 9)
+
+```
+[ IMAGE ]  [ IMAGE ]  [ IMAGE ]
+Service    Service    Service
+Text       Text       Text
+```
+
+**Each Card:**
+- Image at top
+- Service name
+- Short description
+- Clickable → service page
+
+---
+
+## 5. “Why Us” Section
+
+**Layout:** Two-column or single-column
+
+```
+[ TEXT BLOCK ]   [ OPTIONAL IMAGE ]
+```
+
+**Text Block:**
+- Headline: "Why Choose Us" / "What Makes Us Different"
+- Persuasive copy (trust, reliability, guarantees)
+- Bullet points optional
+
+**Below Content:**
+- Primary CTA button
+
+---
+
+## 6. How It Works Section
+
+**Layout:** 3-column process flow
+
+```
+[ STEP 1 ] → [ STEP 2 ] → [ STEP 3 ]
+```
+
+**Step Logic (Mandatory Order):**
+1. Customer action ("Request a Quote")
+2. Company action ("We Do the Work")
+3. Customer benefit ("You Enjoy the Result")
+
+**Each Step:**
+- Image or icon
+- Short headline
+- Simple explanation
+
+---
+
+## 7. Service Area Map Section
+
+**Layout:** Two-column
+
+```
+[ GOOGLE MAP ] | [ SERVICE AREA TEXT ]
+```
+
+**Left Column:**
+- Embedded Google Map
+- Service radius visible
+
+**Right Column:**
+- Text: "We serve within X miles of CITY"
+- List of 15–25 cities
+- Cities may be linked
+
+---
+
+## 8. Testimonials Section
+
+**Layout:** 3-column grid (demo)
+
+```
+[ ⭐⭐⭐⭐⭐ ]  [ ⭐⭐⭐⭐⭐ ]  [ ⭐⭐⭐⭐⭐ ]
+Image       Image       Image
+Text        Text        Text
+```
+
+**Each Testimonial:**
+- Customer image or avatar
+- 5-star rating
+- Short, authentic text
+
+---
+
+## 9. Final CTA Section
+
+**Layout:** Centered
+
+```
+Strong closing sentence
+[ PRIMARY CTA BUTTON ]
+```
+
+**Rules:**
+- Same CTA wording
+- Same color
+- No experimentation here
+
+---
+
+## 10. Contact Section
+
+**Layout:** Compact form block
+
+```
+[ Name ]
+[ Phone / Email ]
+[ Message ]
+[ Submit Button ]
+```
+
+**Rules:**
+- Minimal fields
+- Clean design
+- Not full-page dominating
+
+---
+
+## 11. Footer
+
+**Layout:** 3-column footer
+
+```
+[ ABOUT ] | [ CONTACT ] | [ SERVICE AREA MAP ]
+```
+
+### Column 1 – About
+- Short company description
+
+### Column 2 – Contact
+- Address
+- Phone
+- Email
+- Business hours
+
+### Column 3 – Service Area
+- Embedded Google Map
+
+**Footer Bottom:**
+- Social icons (Google, Facebook, Instagram or relevant)
+
+---
+
+## Wireframe Principles Recap
+
+- Same CTA everywhere
+- Predictable user flow
+- SEO + UX aligned
+- Scalable for automation
+- Replace content, not structure
+
+---
+
+## Next Steps (Upcoming Wireframes)
+
+Planned next:
+1. Service Page Wireframe
+2. Sub-Service Page Wireframe
+3. City Landing Page Wireframe
+4. Areas We Serve Index Page
+
+This homepage wireframe is the foundation for all of them.
+Skip to main content
+LocalBiz Template Pro
+Code assistant
+User
+Objective of this project is to build a website template for a local business, that can be used as a template or frame for any kind of local business. Mostly we are interested in the following businesses: Reinigunsfirmen, Hausmeisterservice, Garten- und Landschaftsbau, Dachdecker, Restaurants, Heilpraktiker, etc. Please respond in the language in which you are spoken to, but create all content in German language. --- Please define the CI/CD design (color, fonts, etc.) then create a prompt for a design mockup-image.
+homepage-design-wireframe.txt
+local-lead-generation-homepage-briefing.txt
+SOPs for landing page design.txt
+SOPs for web design.txt
+Gemini 3 Flash Preview
+Ran for 7s
+lightbulb
+Thought for 6 seconds
+edit
+Edited 13 files
+metadata.json
+check_circle
+index.html
+check_circle
+design-guide.md
+check_circle
+types.ts
+check_circle
+constants.ts
+check_circle
+components/Header.tsx
+check_circle
+components/Hero.tsx
+check_circle
+components/Services.tsx
+check_circle
+components/WhyUs.tsx
+check_circle
+components/ContactForm.tsx
+check_circle
+components/Footer.tsx
+check_circle
+App.tsx
+check_circle
+index.tsx
+check_circle
+User
+irgendwas stimmt mit der schriftfarbe des menüs oder dem hintergrund nicht. Lass uns für das Bild im Hero-bereich ein volle-breite-bild von der frankfurter Skyline verwenden.
+image.png
+image.png
+Gemini 3 Flash Preview
+Ran for 22s
+lightbulb
+Thought for 12 seconds
+Hier ist die aktualisierte Version der Website. Ich habe das Design des Hero-Bereichs komplett überarbeitet, um ein beeindruckendes, vollflächiges Bild der Frankfurter Skyline zu integrieren. Zudem habe ich die Logik für die Kopfzeile (Header) angepasst, damit die Menütexte sowohl auf dem dunklen Hintergrund des Bildes als auch im gescrollten Zustand (weißer Hintergrund) perfekt lesbar sind.
+Spezifikation der Änderungen:
+Header-Optimierung:
+Die Schriftfarbe der Navigationslinks passt sich nun dynamisch an: Weiß auf dem Hero-Bild, Dunkelgrau (slate-900) nach dem Scrollen.
+Der Glanzeffekt und die Schatten wurden verstärkt, um die Lesbarkeit vor dem detaillierten Hintergrundbild zu erhöhen.
+Full-Width Hero-Sektion:
+Das Layout wurde von einem Split-Design zu einer vollflächigen Hintergrundgrafik gewechselt.
+Ein dunkler Overlay-Fader (bg-slate-900/50) sorgt dafür, dass die weißen Texte auch bei hellem Himmel im Bild kontrastreich bleiben.
+Das Hintergrundbild zeigt nun eine atmosphärische Ansicht der Frankfurter Skyline.
+Aesthetics & UX:
+Der Hero-Bereich wirkt jetzt deutlich hochwertiger und großzügiger ("Premium-Look").
+Die Call-to-Action Buttons heben sich durch das neue Hintergrundbild noch klarer ab.
+edit
+Edited 2 files
+components/Header.tsx
+check_circle
+components/Hero.tsx
+check_circle
+User
+dankeschön. lass uns aber als hero hintergrundbild die skyline von Frankfurt verwenden.
+Gemini 3 Flash Preview
+Ran for 14s
+lightbulb
+Thought for 7 seconds
+edit
+Edited 2 files
+components/Hero.tsx
+check_circle
+components/Header.tsx
+check_circle
+lightbulb_tips
+Make changes, add new features, ask for anything
+segment
+App.tsx
+folder
+components
+segment
+ContactForm.tsx
+segment
+Footer.tsx
+segment
+Header.tsx
+segment
+Hero.tsx
+segment
+Services.tsx
+segment
+WhyUs.tsx
+segment
+constants.ts
+draft
+design-guide.md
+code
+index.html
+segment
+index.tsx
+
+more_vert
+data_object
+metadata.json
+segment
+types.ts
+1234567891011121314151617
+Dateiänderungen werden übernommen

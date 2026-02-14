@@ -12,6 +12,7 @@ import {
     Phone,
     Menu,
     ChevronDown,
+    MessageSquare,
 } from "lucide-react";
 
 export function Header() {
@@ -39,10 +40,10 @@ export function Header() {
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
-                    <Logo />
+                    <Logo scrolled={scrolled} />
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex items-center gap-1">
+                    <nav className="hidden lg:flex items-center gap-8">
                         {NAV_ITEMS.map((item) => (
                             <div
                                 key={item.label}
@@ -55,16 +56,16 @@ export function Header() {
                                 <Link
                                     href={item.href}
                                     className={cn(
-                                        "px-4 py-2 text-sm font-medium rounded-md transition-colors",
+                                        "px-2 py-2 text-sm font-medium transition-all duration-200 hover:scale-105",
                                         scrolled
-                                            ? "text-foreground hover:text-primary-500 hover:bg-primary-50"
-                                            : "text-white/90 hover:text-white hover:bg-white/10"
+                                            ? "text-foreground hover:text-accent-500"
+                                            : "text-white/90 hover:text-white hover:drop-shadow-md"
                                     )}
                                 >
                                     <span className="flex items-center gap-1">
                                         {item.label}
                                         {item.children && (
-                                            <ChevronDown className="w-3.5 h-3.5" />
+                                            <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" />
                                         )}
                                     </span>
                                 </Link>
@@ -75,13 +76,13 @@ export function Header() {
                                         initial={{ opacity: 0, y: 8 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 8 }}
-                                        className="absolute top-full left-0 mt-1 w-56 bg-background rounded-lg shadow-lg border p-2"
+                                        className="absolute top-full left-0 mt-2 w-56 bg-background rounded-lg shadow-xl border border-border/50 p-2 overflow-hidden"
                                     >
                                         {item.children.map((child) => (
                                             <Link
                                                 key={child.label}
                                                 href={child.href}
-                                                className="block px-4 py-2.5 text-sm rounded-md hover:bg-primary-50 hover:text-primary-500 transition-colors"
+                                                className="block px-4 py-2.5 text-sm rounded-md text-foreground hover:bg-accent-50 hover:text-accent-600 transition-colors"
                                             >
                                                 {child.label}
                                             </Link>
@@ -93,19 +94,31 @@ export function Header() {
                     </nav>
 
                     {/* CTA + Mobile Menu */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-4">
+                        {/* Schnellangebot Button - Desktop */}
                         <Button
                             asChild
+                            className="hidden xl:flex bg-accent-500 hover:bg-accent-600 text-white font-medium shadow-lg shadow-accent-500/20"
+                        >
+                            <Link href="/anfrage">
+                                <MessageSquare className="mr-2 h-4 w-4" />
+                                Schnellangebot
+                            </Link>
+                        </Button>
+
+                        <Button
+                            asChild
+                            variant={scrolled ? "outline" : "default"}
                             className={cn(
-                                "hidden sm:flex text-white font-medium",
+                                "hidden sm:flex font-medium transition-colors",
                                 scrolled
-                                    ? "bg-primary-500 hover:bg-primary-600"
-                                    : "bg-accent-500 hover:bg-accent-600"
+                                    ? "border-primary-500 text-primary-600 hover:bg-primary-50"
+                                    : "bg-white/10 text-white hover:bg-white/20 border-0 backdrop-blur-sm"
                             )}
                         >
                             <a href="tel:+496978803637">
                                 <Phone className="mr-2 h-4 w-4" />
-                                Jetzt anrufen
+                                069 / 78 80 36 37
                             </a>
                         </Button>
 
@@ -119,7 +132,7 @@ export function Header() {
                             <SheetContent side="right" className="w-[300px] p-0">
                                 <div className="flex flex-col h-full">
                                     <div className="flex items-center justify-between p-4 border-b">
-                                        <Logo />
+                                        <Logo scrolled={true} />
                                     </div>
                                     <nav className="flex flex-col p-4 gap-1">
                                         {NAV_ITEMS.map((item) => (

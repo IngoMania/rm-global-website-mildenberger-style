@@ -12,6 +12,10 @@ import {
     Phone,
     MessageSquare,
     CheckCircle,
+    Brush,
+    School,
+    GraduationCap,
+    Zap,
 } from "lucide-react";
 
 export const COMPANY = {
@@ -61,6 +65,22 @@ export const SERVICES = [
             "Küchen- & Sozialraumreinigung",
         ],
         gradient: "from-primary-500 to-primary-700",
+        image: "/assets/images/Bueroreinigung.webp",
+    },
+    {
+        title: "Unterhaltsreinigung",
+        slug: "unterhaltsreinigung",
+        icon: Brush,
+        description:
+            "Regelmäßige und gründliche Reinigung für den Werterhalt Ihrer Immobilie. Sauberkeit, auf die Sie sich jeden Tag verlassen können.",
+        features: [
+            "Regelmäßige Intervalle",
+            "Bodenpflege",
+            "Oberflächenreinigung",
+            "Müllentsorgung",
+        ],
+        gradient: "from-orange-400 to-red-500",
+        image: "/assets/images/Unterhaltsreinigung.webp",
     },
     {
         title: "Medizinische Reinigung",
@@ -75,6 +95,22 @@ export const SERVICES = [
             "Hygienemanagement",
         ],
         gradient: "from-blue-500 to-cyan-600",
+        image: "/assets/images/Praxisreinigung.webp",
+    },
+    {
+        title: "Kita-Reinigung",
+        slug: "kita-reinigung",
+        icon: School,
+        description:
+            "Hygienische Sauberkeit für die Kleinsten. Wir verwenden kinderfreundliche Reinigungsmittel und achten besonders auf sensible Bereiche.",
+        features: [
+            "Unbedenkliche Reinigungsmittel",
+            "Spielzeugreinigung",
+            "Sanitärhygiene",
+            "Desinfektion",
+        ],
+        gradient: "from-green-400 to-emerald-600",
+        image: "/assets/images/Kita-Reinigung.webp",
     },
     {
         title: "Glas- & Fassadenreinigung",
@@ -89,6 +125,7 @@ export const SERVICES = [
             "Rahmen- & Falzreinigung",
         ],
         gradient: "from-sky-400 to-blue-600",
+        image: "/assets/images/Fensterputzer.webp",
     },
     {
         title: "Winterdienst",
@@ -103,6 +140,7 @@ export const SERVICES = [
             "24h Bereitschaftsdienst",
         ],
         gradient: "from-indigo-500 to-purple-600",
+        image: "/assets/images/Winterdienst.webp",
     },
 ];
 
@@ -114,10 +152,22 @@ export const BENEFITS = [
         icon: Award,
     },
     {
+        title: "Meisterbetrieb",
+        description:
+            "Als eingetragener Meisterbetrieb garantieren wir fachliche Kompetenz und höchste Qualitätsstandards.",
+        icon: GraduationCap,
+    },
+    {
         title: "Geschultes Personal",
         description:
             "Unser Team wird regelmäßig geschult und arbeitet nach höchsten Qualitätsstandards für beste Ergebnisse.",
         icon: Users,
+    },
+    {
+        title: "Modernste Technik",
+        description:
+            "Einsatz modernster Reinigungsmaschinen und -technologien für effiziente und gründliche Ergebnisse.",
+        icon: Zap,
     },
     {
         title: "Umweltbewusst",

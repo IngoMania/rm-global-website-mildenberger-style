@@ -1,0 +1,26 @@
+# RM GLOBAL GEBÄUDEDIENSTE GMBH - MASTER INFO
+**DO NOT DELETE THIS FILE.**
+
+## Core Information
+- **Name**: RM GLOBAL Gebäudedienste GmbH
+- **Motto**: WERTE. pflegen | schützen | erhalten.
+- **Founded**: 1999
+- **Core Business**: Facility Management, Office Cleaning, Medical Cleaning, Glass/Facade Cleaning, Winter Services.
+
+## Locations
+
+### Headquarters (Frankfurt)
+- **Address**: Flurscheideweg 1, 65936 Frankfurt am Main
+- **Phone**: +49 (0) 69 / 78 80 36 37
+- **Fax**: +49 (0) 69 / 78 80 38 28
+- **Email**: info@globaldienste.de
+
+### Branch (Mannheim)
+- **Address**: Harrlachweg 1, 68163 Mannheim
+- **Phone**: +49 (0) 621 / 397 32 426
+- **Email**: info@globaldienste.de
+
+## Online Presence
+- **Website**: https://www.globaldienste.de
+- **Operating Hours**: Monday - Friday, 08:30 - 17:00
+- **Service Area**: Rhein-Main region and Mannheim vicinity.

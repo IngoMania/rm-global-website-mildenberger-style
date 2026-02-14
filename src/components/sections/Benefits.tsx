@@ -15,6 +15,7 @@ export function Benefits() {
                     title="Warum"
                     highlight="RM GLOBAL?"
                     description="Was uns von anderen unterscheidet"
+                    className="text-center mx-auto max-w-3xl"
                 />
 
                 <motion.div
@@ -22,7 +23,7 @@ export function Benefits() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-50px" }}
-                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
                 >
                     {BENEFITS.map((benefit) => (
                         <motion.div
@@ -30,22 +31,17 @@ export function Benefits() {
                             variants={fadeInUp}
                             whileHover={{ y: -8, transition: { duration: 0.3 } }}
                         >
-                            <Card className="h-full border-0 shadow-md hover:shadow-xl transition-shadow bg-background">
-                                <CardHeader className="pb-2">
+                            <Card className="h-full border-0 shadow-md hover:shadow-xl transition-shadow bg-background text-center group">
+                                <CardHeader className="pb-4 flex flex-col items-center">
                                     <motion.div
-                                        className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg shadow-primary-500/20"
-                                        whileHover={{ rotate: 5, scale: 1.1 }}
-                                        transition={{
-                                            type: "spring",
-                                            stiffness: 400,
-                                            damping: 10,
-                                        }}
+                                        className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg shadow-primary-500/20 group-hover:scale-110 transition-transform duration-300"
+                                        whileHover={{ rotate: 5 }}
                                     >
-                                        <benefit.icon className="w-7 h-7 text-white" />
+                                        <benefit.icon className="w-10 h-10 text-white" />
                                     </motion.div>
                                 </CardHeader>
                                 <CardContent>
-                                    <h3 className="text-lg font-semibold mb-2">
+                                    <h3 className="text-lg font-bold mb-3">
                                         {benefit.title}
                                     </h3>
                                     <p className="text-sm text-muted-foreground leading-relaxed">

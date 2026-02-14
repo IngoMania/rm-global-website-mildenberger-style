@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { SERVICES } from "@/lib/constants";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, MessageSquare } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Services() {
     return (
@@ -26,7 +27,7 @@ export function Services() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-50px" }}
-                    className="grid md:grid-cols-2 gap-6 lg:gap-8"
+                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
                 >
                     {SERVICES.map((service) => (
                         <motion.div
@@ -35,18 +36,27 @@ export function Services() {
                             whileHover="hover"
                         >
                             <Card className="overflow-hidden group h-full border-0 shadow-md hover:shadow-xl transition-shadow">
-                                {/* Header with gradient */}
-                                <div className="relative h-48 overflow-hidden">
-                                    <motion.div
-                                        className={`absolute inset-0 bg-gradient-to-br ${service.gradient}`}
-                                        variants={{
-                                            hover: { scale: 1.05 },
-                                        }}
-                                        transition={{ duration: 0.4 }}
-                                    />
-                                    <service.icon className="absolute bottom-4 right-4 w-24 h-24 text-white/15" />
+                                {/* Header with Image */}
+                                <div className="relative h-56 overflow-hidden">
+                                    {service.image ? (
+                                        <Image
+                                            src={service.image}
+                                            alt={service.title}
+                                            fill
+                                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                    ) : (
+                                        <div
+                                            className={`absolute inset-0 bg-gradient-to-br ${service.gradient}`}
+                                        />
+                                    )}
+
+                                    {/* Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+
                                     <div className="absolute top-4 left-4">
-                                        <Badge className="bg-white/20 backdrop-blur-sm text-white border-0">
+                                        <Badge className="bg-white/90 text-primary-950 font-semibold hover:bg-white border-0 shadow-sm backdrop-blur-sm">
                                             {service.title}
                                         </Badge>
                                     </div>
@@ -73,17 +83,21 @@ export function Services() {
                                         ))}
                                     </ul>
 
-                                    <motion.div
-                                        variants={{ hover: { x: 5 } }}
-                                        transition={{ duration: 0.3 }}
-                                    >
-                                        <Button variant="ghost" asChild className="p-0 h-auto text-primary-500 hover:text-primary-600 hover:bg-transparent">
-                                            <Link href={`/leistungen/${service.slug}`}>
+                                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                                        <Button variant="ghost" asChild className="p-0 h-auto text-primary-600 hover:text-primary-700 hover:bg-transparent px-0 group/link">
+                                            <Link href={`/leistungen/${service.slug}`} className="flex items-center">
                                                 Mehr erfahren
-                                                <ArrowRight className="ml-2 h-4 w-4" />
+                                                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                                             </Link>
                                         </Button>
-                                    </motion.div>
+
+                                        <Button size="sm" asChild className="bg-accent-500 hover:bg-accent-600 text-white shadow-sm hover:shadow-md transition-all">
+                                            <Link href={`/anfrage?service=${service.slug}`}>
+                                                <MessageSquare className="mr-2 h-3.5 w-3.5" />
+                                                Angebot
+                                            </Link>
+                                        </Button>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </motion.div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { COMPANY, LOCATIONS, SERVICES } from "@/lib/constants";
 import { Phone, Mail, MapPin, Globe } from "lucide-react";
@@ -19,17 +20,14 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center">
-                                <span className="text-white font-extrabold text-lg">RM</span>
-                            </div>
-                            <div>
-                                <p className="font-extrabold text-lg leading-tight">
-                                    RM GLOBAL
-                                </p>
-                                <p className="text-[10px] font-medium tracking-widest uppercase text-white/60">
-                                    Gebäudedienste
-                                </p>
+                        <div className="inline-block bg-white rounded-xl p-4 mb-4">
+                            <div className="relative w-48 h-12">
+                                <Image
+                                    src="/assets/images/logo-transparent-header.webp"
+                                    alt="RM GLOBAL Gebäudedienste"
+                                    fill
+                                    className="object-contain"
+                                />
                             </div>
                         </div>
                         <p className="text-sm text-white/70 italic">
