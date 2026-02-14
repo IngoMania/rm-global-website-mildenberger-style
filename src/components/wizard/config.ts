@@ -1,14 +1,11 @@
 import { ServiceFlow } from "./types";
 import {
-    Building2,
-    Calendar,
     CheckCircle2,
     Clock,
     Home,
     Layers,
     MapPin,
     Ruler,
-    Sparkles,
     Users,
 } from "lucide-react";
 

@@ -2,7 +2,6 @@
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
 import { Wizard } from "./Wizard";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 interface QuizContextType {
     isOpen: boolean;
@@ -41,17 +40,21 @@ export function QuizProvider({ children }: { children: ReactNode }) {
     return (
         <QuizContext.Provider value={{ isOpen, openQuiz, closeQuiz }}>
             {children}
-            <Dialog open={isOpen} onOpenChange={setIsOpen}>
-                <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0 gap-0 bg-gray-50 border-none shadow-2xl rounded-2xl">
-                    <div className="relative isolate">
-                        {/* Close button is handled by DialogPrimitive but we can style it or add our own if needed. 
-                            Wizard has its own layout. We should make Wizard responsive inside dialog. */}
-                        <div className="p-1">
-                            <Wizard isModal={true} onClose={closeQuiz} />
+            {isOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+                    <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl">
+                        <div className="absolute right-4 top-4 z-10">
+                            <button
+                                onClick={closeQuiz}
+                                className="p-2 text-gray-500 hover:text-gray-700 transition-colors"
+                            >
+                                ✕
+                            </button>
                         </div>
+                        <Wizard isModal={true} onClose={closeQuiz} />
                     </div>
-                </DialogContent>
-            </Dialog>
+                </div>
+            )}
         </QuizContext.Provider>
     );
 }
