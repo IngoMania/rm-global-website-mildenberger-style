@@ -5,18 +5,6 @@
         }
     ],
     "settings": {
-        "editor.formatOnSave": true,
-        "files.exclude": {
-            "**/.git": true,
-            "**/.next": true,
-            "**/node_modules": true
-        }
-    },
-    "extensions": {
-        "recommendations": [
-            "esbenp.prettier-vscode",
-            "dbaeumer.vscode-eslint",
-            "bradlc.vscode-tailwindcss"
-        ]
+        "editor.formatOnSave": true
     }
 }
